@@ -269,6 +269,12 @@ footer {
 }
 
 @media screen and (max-width:1200px) {
+    .contenedorbasquet{
+        flex-direction: column; 
+    }
+ .contenedorhand{
+    flex-direction: column;
+ }
     .contenedor {
         flex-direction: column;
     }

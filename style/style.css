@@ -272,6 +272,9 @@ footer {
     .contenedorbasquet{
         flex-direction: column; 
     }
+    .sdb1{
+        width: 100%;
+    }
  .contenedorhand{
     flex-direction: column;
  }

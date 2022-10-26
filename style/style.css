@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #034574;
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+}
+
+header {
+    background-color: #0769e9;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navlink {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+}
+
+.navmenu {
+    display: flex;
+    margin-right: 3%;
+    list-style: none;
+}
+
+.navmenuitem {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    width: max-content;
+}
+
+.navlink {
+    padding: 8px 12px;
+    border-radius: 3px;
+    transition: 0, 5s;
+}
+
+.navlink:hover {
+    background-color: #034574;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between
+}
+
+.div1 {
+    display: flex;
+    font-family: sans-serif;
+    padding: 5px;
+    width: 65%;
+    background-color: white;
+
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 3px solid black;
+
+}
+
+.img1 {
+
+    width: 450px;
+    height: 600px;
+    display: flex;
+
+    padding: 10px;
+
+}
+
+
+.div2 {
+    border-radius: 10px;
+    border: 3px solid black;
+    margin-top: 10px;
+    padding: 5px;
+    width: 35%;
+
+    background-color: white;
+}
+
+.img2 {
+    width: 50%;
+
+    float: left;
+    padding: 10px;
+}
+
+.subdiv1 {
+    margin: 0;
+    width: auto;
+    height: 50%;
+}
+
+
+
+
+
+.img3 {
+    width: 50%;
+
+    padding: 15px;
+}
+
+
+
+.div3 {
+    display: flex;
+    border-radius: 10px;
+    border: 3px solid black;
+
+    padding: 0;
+    background-color: white;
+    width: 100%;
+
+    margin-top: 10px;
+}
+
+.subdiv3 {
+
+
+    width: 50%;
+    padding: 5px;
+    margin: 10px;
+}
+
+.video1 {
+    float: left;
+}
+
+.subdiv4 {
+    width: 50%;
+
+}
+
+.imgtaek {
+    float: left;
+
+    width: 50%;
+
+
+}
+
+.parrafotaek {
+    margin: 10px;
+}
+
+footer {
+    border: 3px solid black;
+
+    background-color: white;
+}
+
+.divhand {
+    border-radius: 10px;
+    border: 3px solid black;
+    background-color: white;
+    margin-top: 10px;
+    width: 35%;
+   
+}
+
+.imghand {
+    margin: 10px;
+    
+    width: 80%;
+   
+}
+
+.contenedorhand {
+    display: flex;
+}
+
+.divhand2 {
+    font-size: 18px;
+    display: flex;
+    border-radius: 10px;
+    border: black solid 3px;
+    margin: 10px;
+    background-color: white;
+    margin-top: 10px;
+    width: 65%;
+    
+}
+
+.imgcampeon {
+   
+    width: 50%;
+   height: 80%;
+    margin: 10px;
+}
+
+.contenedorbasquet {
+    display: flex;
+    border-radius: 10px;
+    border: solid black 3px;
+    background-color: white;
+    width: 100%;
+   
+
+}
+
+.sdb1 img {
+    float: left;
+    
+    width: 50%;
+    margin: 10px
+}
+
+.sdb1 h6 {
+   
+    font-size: 30px;
+}
+
+.sdb1 {
+    display: flex;
+    width: 50%;
+    border-right: solid black 3px;
+    height: 100%;
+}
+
+.imgcam {
+    float: left;
+    width: 60%;
+    margin: 10px;
+}
+
+.sdb2 {
+    width: 50%;
+}
+
+.contenedorbox {
+    display: flex;
+    border-radius: 10px;
+    border: solid black 3px;
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+
+.contenedorbox div {
+
+    width: 50%;
+}
+
+.contenedorbox div img {
+    margin: 10px;
+
+    display: flex;
+    width: 80%;
+}
+
+@media screen and (max-width:1200px) {
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .div1 {
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+
+    }
+
+    .img1 {
+        width: 90%;
+    }
+
+    .div2 {
+        width: 100%;
+    }
+
+    .div3 {
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .subdiv3 {
+        height: 50%;
+        width: 100%;
+    }
+
+    .subdiv4 {
+        height: 50%;
+        width: 100%;
+    }
+
+    .video1 {
+        width: 95%;
+    }
+
+    .contenedorbox {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .divbox1 {
+        width: 100%;
+
+    }
+
+    .contenedorbox div {
+        width: 100%;
+    }
+
+    .contenedorbox div img  {
+        width: 90%;
+    }
+
+}

@@ -64,7 +64,7 @@ header {
 }
 
 .div1 {
-    display: flex;
+    
     font-family: sans-serif;
     padding: 5px;
     width: 65%;
@@ -80,7 +80,7 @@ header {
 
     width: 450px;
     height: 600px;
-    display: flex;
+   float: left;
 
     padding: 10px;
 
@@ -180,7 +180,7 @@ footer {
 
 .imghand {
     margin: 10px;
-    
+    float: left;
     width: 80%;
    
 }
@@ -191,7 +191,7 @@ footer {
 
 .divhand2 {
     font-size: 18px;
-    display: flex;
+    
     border-radius: 10px;
     border: black solid 3px;
     margin: 10px;
@@ -225,13 +225,10 @@ footer {
     margin: 10px
 }
 
-.sdb1 h6 {
-   
-    font-size: 30px;
-}
+
 
 .sdb1 {
-    display: flex;
+    
     width: 50%;
     border-right: solid black 3px;
     height: 100%;
@@ -270,6 +267,11 @@ footer {
 }
 
 @media screen and (max-width:1200px) {
+   .sdb1 img{
+    width: 50%;
+    height: 20%;
+    float: left;
+   }
     .contenedorbasquet{
         flex-direction: column; 
     }

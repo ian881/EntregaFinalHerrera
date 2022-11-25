@@ -22,11 +22,75 @@ header {
     top: 0;
     left: 0;
 }
-footer {
-    border: 3px solid black;
 
-    background-color: white;
+footer {
+
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: #034574;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+        height: 80px;
+        margin-bottom: 1rem;
+    }
+
+    div,ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+
+    }
+ 
 }
+.iconsocial{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid white;
+    background-image: url(../assets/FacebookBlanco.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+.iconsocial:hover{
+    background-color: aqua;
+    filter: invert(1);
+
+}
+.iconsocial:nth-of-type(2){
+    background-image: url(../assets/InstagramBlanco.png);
+ }
+ .iconsocial:nth-of-type(3){
+    background-image: url(../assets/TwitterBlanco.png);
+ }
+ .footer-menu-container{
+    list-style-type: none;
+    color: white;
+    font-size: pointer;
+
+ }
+ .menuitem{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+
+ }
+ .menuitem:hover{
+    opacity: 1;
+
+ }
+    
 
 .contenedor {
     display: flex;
@@ -45,7 +109,7 @@ footer {
     border: 3px solid black;
 
     img {
-        width:60%;
+        width: 60%;
         height: 90%;
         float: left;
 
@@ -80,10 +144,12 @@ footer {
     width: 100%;
 
     margin-top: 10px;
-    div{
+
+    div {
         width: 100%;
     }
-    img{
+
+    img {
         float: left;
 
         width: 50%;
@@ -100,17 +166,17 @@ footer {
     height: auto;
 }
 
-.contenedorbox{
+.contenedorbox {
     @include caja-personalizada()
 }
 
 .contenedorbox div {
     border-right: 3px solid black;
     width: 50%;
-    
+
     img {
         margin: 10px;
-    
+
         display: flex;
         width: 80%;
     }
@@ -127,141 +193,174 @@ footer {
     background-color: white;
     height: auto;
     width: 35%;
-    
-    img{
+
+    img {
         margin: 10px;
-    float: left;
-    width: 80%;
+        float: left;
+        width: 80%;
     }
-   
+
 }
 
 .divhand2 {
     font-size: 18px;
     height: 100%;
     border-radius: 10px;
-   
+
     margin: 10px;
     background-color: white;
     margin-top: 10px;
     width: 65%;
-    
 
-    img{
+
+    img {
         float: left;
         width: 50%;
-       height: 80%;
+        height: 80%;
         margin: 10px;
     }
 }
 
 .contenedorbasquet {
-    @include caja-personalizada(
-    )
-   
+    @include caja-personalizada()
 }
+
 .sdb1 {
-    
+
     width: 50%;
     border-right: solid black 3px;
     height: 100%;
+
     img {
         float: left;
-        
+
         width: 50%;
         margin: 10px
     }
 }
+
 .sdb2 {
     width: 50%;
+
     img {
         float: left;
         width: 60%;
         margin: 10px;
     }
 }
+.futsec{
+    display: flex;
+}
+.futbol{
+    border-radius: 10px;
+    border-right: 3px solid black;
+    background-color: white;
+    width: 50%;
+   img{
+    margin: 10px;
+        float: left;
+   }
+
+}
+.chile{
+    
+    border-radius: 10px;
+    border-right: 3px solid black;
+    background-color: white;
+    width: 50%;
+}
+
+
+
 
 //media
 @media screen and (max-width:1200px) {
-    .sdb1 img{
-     width: 50%;
-     height: 20%;
-     float: left;
+    .sdb1 img {
+        width: 50%;
+        height: 20%;
+        float: left;
     }
-     .contenedorbasquet{
-         flex-direction: column; 
-     }
-     .sdb1{
-         width: 100%;
-     }
-  .contenedorhand{
-     flex-direction: column;
-  }
-  .divhand{
-     width: 100%;
-  }
-  .sdb2{
-     width: 100%;
- }
-  .divhand2{
-     width: 100%;
-  }
-     .contenedor {
-         flex-direction: column;
-     }
- 
-     .div1 {
-         flex-direction: column;
-         width: 100%;
-         display: flex;
- 
-     }
- 
-     .img1 {
-         width: 90%;
-     }
- 
-     .div2 {
-         width: 100%;
-     }
- 
-     .div3 {
-         flex-direction: column;
-         width: 100%;
- 
-     }
- 
-     .subdiv3 {
-         height: 50%;
-         width: 100%;
-     }
- 
-     .subdiv4 {
-         height: 50%;
-         width: 100%;
-     }
- 
-     .video1 {
-         width: 95%;
-     }
- 
-     .contenedorbox {
-         flex-direction: column;
-         width: 100%;
-         height: auto;
-     }
- 
-     .divbox1 {
-         width: 100%;
- 
-     }
- 
-     .contenedorbox div {
-         width: 100%;
-     }
- 
-     .contenedorbox div img  {
-         width: 90%;
-     }
- 
- }
+
+    .contenedorbasquet {
+        flex-direction: column;
+    }
+
+    .sdb1 {
+        width: 100%;
+    }
+
+    .contenedorhand {
+        flex-direction: column;
+    }
+
+    .divhand {
+        width: 100%;
+    }
+
+    .sdb2 {
+        width: 100%;
+    }
+
+    .divhand2 {
+        width: 100%;
+    }
+
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .div1 {
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+
+    }
+
+    .img1 {
+        width: 90%;
+    }
+
+    .div2 {
+        width: 100%;
+    }
+
+    .div3 {
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .subdiv3 {
+        height: 50%;
+        width: 100%;
+    }
+
+    .subdiv4 {
+        height: 50%;
+        width: 100%;
+    }
+
+    .video1 {
+        width: 95%;
+    }
+
+    .contenedorbox {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .divbox1 {
+        width: 100%;
+
+    }
+
+    .contenedorbox div {
+        width: 100%;
+    }
+
+    .contenedorbox div img {
+        width: 90%;
+    }
+
+}

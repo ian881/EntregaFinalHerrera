@@ -340,8 +340,14 @@ footer ul {
     width: 100%;
     margin-block: 10px;
   }
+  .futbol img {
+    width: 90%;
+  }
   .chile {
     width: 100%;
+  }
+  .chile img {
+    width: 90%;
   }
 }
 

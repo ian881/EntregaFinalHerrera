@@ -34,7 +34,8 @@ footer img {
   height: 80px;
   margin-bottom: 1rem;
 }
-footer div, footer ul {
+footer div,
+footer ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,11 +138,32 @@ footer div, footer ul {
 
 .contenedorbox {
   display: flex;
+}
+
+.divbox1 {
+  background-color: white;
+  width: 50%;
+  height: auto;
   border-radius: 10px;
   border: solid black 3px;
+}
+.divbox1 img {
+  margin: 10px;
+  float: left;
+  width: 50%;
+}
+
+.divbox2 {
   background-color: white;
-  width: 100%;
+  width: 50%;
   height: auto;
+  border-radius: 10px;
+  border: solid black 3px;
+}
+.divbox2 img {
+  margin: 10px;
+  float: left;
+  width: 50%;
 }
 
 .contenedorbox div {
@@ -156,11 +178,6 @@ footer div, footer ul {
 
 .contenedorhand {
   display: flex;
-  border-radius: 10px;
-  border: solid black 3px;
-  background-color: white;
-  width: 100%;
-  height: auto;
 }
 
 .divhand {
@@ -173,14 +190,13 @@ footer div, footer ul {
 .divhand img {
   margin: 10px;
   float: left;
-  width: 80%;
+  width: 95%;
 }
 
 .divhand2 {
   font-size: 18px;
   height: 100%;
   border-radius: 10px;
-  margin: 10px;
   background-color: white;
   margin-top: 10px;
   width: 65%;
@@ -194,17 +210,13 @@ footer div, footer ul {
 
 .contenedorbasquet {
   display: flex;
-  border-radius: 10px;
-  border: solid black 3px;
-  background-color: white;
-  width: 100%;
-  height: auto;
 }
 
 .sdb1 {
+  background-color: white;
   width: 50%;
-  border-right: solid black 3px;
-  height: 100%;
+  border-radius: 10px;
+  border-right: 3px solid black;
 }
 .sdb1 img {
   float: left;
@@ -214,6 +226,9 @@ footer div, footer ul {
 
 .sdb2 {
   width: 50%;
+  background-color: white;
+  border-radius: 10px;
+  border-right: 3px solid black;
 }
 .sdb2 img {
   float: left;
@@ -223,6 +238,7 @@ footer div, footer ul {
 
 .futsec {
   display: flex;
+  margin: auto;
 }
 
 .futbol {
@@ -242,6 +258,11 @@ footer div, footer ul {
   background-color: white;
   width: 50%;
 }
+.chile img {
+  width: 30%;
+  margin: 10px;
+  float: left;
+}
 
 @media screen and (max-width: 1200px) {
   .sdb1 img {
@@ -254,6 +275,7 @@ footer div, footer ul {
   }
   .sdb1 {
     width: 100%;
+    margin-block: 10px;
   }
   .contenedorhand {
     flex-direction: column;
@@ -303,12 +325,23 @@ footer div, footer ul {
   }
   .divbox1 {
     width: 100%;
+    margin-block: 10px;
   }
   .contenedorbox div {
     width: 100%;
   }
   .contenedorbox div img {
     width: 90%;
+  }
+  .futsec {
+    flex-direction: column;
+  }
+  .futbol {
+    width: 100%;
+    margin-block: 10px;
+  }
+  .chile {
+    width: 100%;
   }
 }
 
